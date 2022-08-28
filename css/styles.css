@@ -103,7 +103,30 @@ img {
   align-items: center;
 }
 
-.header-link {
+.logo-second-part {
+  margin-right: 93px;
+}
+
+.header-nav {
+  margin-right: auto;
+}
+
+.site-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.contacts-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -284,6 +307,21 @@ img {
 }
 
 /* portfolio */
+
+.filter-container {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .portfolio-button {
   padding: 6px 22px;
