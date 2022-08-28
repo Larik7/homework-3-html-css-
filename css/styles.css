@@ -1,29 +1,29 @@
 :root {
   /* Fonts */
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 
   /* Text colors */
   --main-txt-cl: #212121;
   --second-txt-cl: #757575;
   --light-txt-cl: #ffffff;
-  --accent-txt-cl: #2196F3;
-  --logo-first-txt-cl: #2196F3;
+  --accent-txt-cl: #2196f3;
+  --logo-first-txt-cl: #2196f3;
   --logo-second-txt-cl: #000000;
   --logo-second-alt-txt-cl: #ffffff;
   --light-txt-cl-60: rgba(255, 255, 255, 0.6);
 
   /* Background colors */
-  --accent-bg-cl: #F5F5F5;
+  --accent-bg-cl: #f5f5f5;
   --main-bg-cl: #ffffff;
-  --second-bg-cl: #2F303A;
-  --btn-filter-bg-cl: #F5F4FA;
-  --btn-filter-act-cl: #2196F3;
-  --bnt-act-cl: #188CE8;
-  --team-bg-cl: #F5F4FA;
+  --second-bg-cl: #2f303a;
+  --btn-filter-bg-cl: #f5f4fa;
+  --btn-filter-act-cl: #2196f3;
+  --btn-hero-cl: #2196f3;
+  --bnt-act-cl: #188ce8;
+  --team-bg-cl: #f5f4fa;
 
   /* Others */
-
 }
 
 .page {
@@ -36,6 +36,23 @@
   background-color: var(--main-bg-cl);
 }
 
+/* Reset style */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
@@ -43,6 +60,8 @@
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -54,7 +73,6 @@
   outline: 2px solid red;
   outline-offset: -2px;
 }
-
 
 /* Header */
 
@@ -80,6 +98,15 @@
   text-decoration: none;
 }
 
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  margin-right: 50px;
+}
+
 .page-header {
   background-color: var(--main-bg-cl);
 }
@@ -97,7 +124,7 @@
 
 .page-header .link:hover,
 .page-header .link:focus {
-  color: var(--accent-txt-cl)
+  color: var(--accent-txt-cl);
 }
 
 .site-nav .link.current {
@@ -111,6 +138,7 @@
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -121,13 +149,21 @@
 }
 
 .hero-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 216px;
+  min-height: 50px;
+  padding: 6px 28px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--light-txt-cl);
-  background-color: var(--accent-txt-cl);
+  background-color: var(--btn-hero-cl);
   cursor: pointer;
 }
 
@@ -135,7 +171,6 @@
 .hero-button:focus {
   background-color: var(--bnt-act-cl);
 }
-
 
 .hero-button:active {
   background-color: var(--bnt-act-cl);
@@ -157,6 +192,7 @@
 }
 
 .feature-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -170,6 +206,7 @@
 /* about */
 
 .about-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -177,6 +214,14 @@
 }
 
 /* team-section */
+
+.team-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
 
 .team-section {
   background-color: var(--team-bg-cl);
@@ -202,6 +247,11 @@
 }
 
 /* footer */
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 
 .footer-section {
   background-color: var(--second-bg-cl);
@@ -230,12 +280,14 @@
 
 .footer-section .link:hover,
 .footer-section .link:focus {
-  color: var(--accent-txt-cl)
+  color: var(--accent-txt-cl);
 }
 
 /* portfolio */
 
 .portfolio-button {
+  padding: 6px 22px;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -250,11 +302,13 @@
 .portfolio-button:focus {
   background-color: var(--btn-filter-act-cl);
   color: var(--light-txt-cl);
+  border-radius: 4px;
 }
 
 .portfolio-button:active {
   color: var(--light-txt-cl);
   background-color: var(--btn-filter-act-cl);
+  border-radius: 4px;
 }
 
 .project-item {
@@ -262,6 +316,7 @@
 }
 
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -269,16 +324,12 @@
 }
 
 .description-project {
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--second-txt-cl);
 }
-
-
-
-
-
 
 /* фон fff */
 /* основной цвет текста #212121 */
