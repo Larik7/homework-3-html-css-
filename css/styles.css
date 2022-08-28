@@ -64,6 +64,11 @@ img {
   padding: 0;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -156,11 +161,16 @@ img {
 
 /* Hero */
 
-.hero {
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--second-bg-cl);
 }
 
 .hero-title {
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -212,6 +222,15 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-list {
+  flex-basis: 270px;
 }
 
 .feature-title {
@@ -309,7 +328,7 @@ img {
 /* portfolio */
 
 .filter-container {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 50px;
   display: flex;
   align-items: center;
