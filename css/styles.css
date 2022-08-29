@@ -398,12 +398,14 @@ img {
   background-color: var(--btn-filter-act-cl);
   color: var(--light-txt-cl);
   border-radius: 4px;
+  border: none;
 }
 
 .portfolio-button:active {
   color: var(--light-txt-cl);
   background-color: var(--btn-filter-act-cl);
   border-radius: 4px;
+  border: none;
 }
 
 .project-item {
