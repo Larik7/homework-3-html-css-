@@ -318,7 +318,7 @@ img {
 
 .footer-logo {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-section {
@@ -348,6 +348,11 @@ img {
   margin-bottom: 9px;
   font-style: normal;
   color: var(--light-txt-cl-60);
+}
+
+.adress-link:not(:last-child) {
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .footer-section .link:hover,
