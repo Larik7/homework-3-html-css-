@@ -350,11 +350,6 @@ img {
   color: var(--light-txt-cl-60);
 }
 
-.adress-link:not(:last-child) {
-  display: inline-block;
-  margin-bottom: 9px;
-}
-
 .footer-section .link:hover,
 .footer-section .link:focus {
   color: var(--accent-txt-cl);
