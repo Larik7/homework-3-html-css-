@@ -265,10 +265,6 @@ img {
 
 /* team-section */
 
-.team-container {
-  /* display: flex; */
-}
-
 .team-list {
   display: flex;
   gap: 30px;
@@ -301,6 +297,7 @@ img {
 .employee-container {
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .position {
@@ -313,6 +310,12 @@ img {
 
 /* footer */
 
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: block;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -323,6 +326,8 @@ img {
 }
 
 .address-item {
+  display: inline-block;
+  margin-bottom: 9px;
   font-style: normal;
   color: var(--light-txt-cl);
 }
@@ -339,6 +344,8 @@ img {
 }
 
 .address-link {
+  display: inline-block;
+  margin-bottom: 9px;
   font-style: normal;
   color: var(--light-txt-cl-60);
 }
