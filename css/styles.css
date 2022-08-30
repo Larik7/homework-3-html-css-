@@ -327,7 +327,7 @@ img {
   background-color: var(--second-bg-cl);
 }
 
-.contact-list {
+.contact-list:not(:last-child) {
   margin-bottom: 9px;
 }
 
