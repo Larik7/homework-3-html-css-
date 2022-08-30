@@ -360,9 +360,7 @@ img {
 /* portfolio */
 
 .filter-container {
-  /* padding-bottom: 50px; */
   display: flex;
-  align-items: center;
 }
 
 .portfolio-container {
@@ -373,6 +371,7 @@ img {
 .filter-list {
   display: flex;
   gap: 8px;
+  margin-bottom: 50px;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
