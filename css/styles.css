@@ -229,12 +229,11 @@ img {
 
 .features-list {
   display: flex;
-  justify-content: space-between;
   gap: 30px;
 }
 
 .features-item {
-  flex-basis: 270px;
+  flex-basis: calc((100% - 90) /4);
 }
 
 .feature-title {
@@ -359,11 +358,6 @@ img {
 
 /* portfolio */
 
-.filter-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .portfolio-container {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
@@ -376,8 +370,7 @@ img {
   gap: 8px;
   margin-bottom: 50px;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
 }
 
 .portfolio-button {
